@@ -74,6 +74,20 @@ The system supports intelligent research, structured blog generation, backend wo
 
 ---
 
+# Export Support
+
+The platform supports exporting generated blogs into downloadable formats:
+
+- PDF Export
+- Word (.docx) Export
+
+## Sample Export Files
+
+- [Download Sample PDF](exports/Output.pdf)
+- [Download Sample Word File](exports/Sample_generated_blog.docx)
+
+---
+
 # Future Improvements
 
 * AI image generation
