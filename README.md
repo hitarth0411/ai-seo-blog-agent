@@ -88,6 +88,125 @@ The platform supports exporting generated blogs into downloadable formats:
 
 ---
 
+# Local Setup Guide
+
+## Clone Repository
+
+```bash
+git clone https://github.com/hitarth0411/ai-seo-blog-agent.git
+cd ai-seo-blog-agent
+```
+
+---
+
+# Backend Setup
+
+## Navigate to Backend
+
+```bash
+cd backend
+```
+
+## Create Virtual Environment
+
+### Windows
+
+```bash
+python -m venv venv
+venv\Scripts\activate
+```
+
+### Linux/macOS
+
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+
+## Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+## Configure Environment Variables
+
+Create a `.env` file inside backend folder and add:
+
+```env
+GROQ_API_KEY=your_groq_api_key
+DATABASE_URL=your_database_url
+```
+
+## Run Backend Server
+
+```bash
+uvicorn main:app --reload
+```
+
+Backend will run on:
+
+```text
+http://localhost:8000
+```
+
+---
+
+# Frontend Setup
+
+## Navigate to Frontend
+
+```bash
+cd frontend
+```
+
+## Install Dependencies
+
+```bash
+npm install
+```
+
+## Start Frontend
+
+```bash
+npm run dev
+```
+
+Frontend will run on:
+
+```text
+http://localhost:5173
+```
+
+---
+
+# Database Setup
+
+Make sure PostgreSQL is installed and running.
+
+Create a database and update the `DATABASE_URL` inside `.env`.
+
+Example:
+
+```env
+DATABASE_URL=postgresql://username:password@localhost:5432/blog_agent
+```
+
+---
+
+# Run Full Application
+
+1. Start PostgreSQL
+2. Run Backend Server
+3. Run Frontend Server
+4. Open browser:
+
+```text
+http://localhost:5173
+```
+
+---
+
 # Future Improvements
 
 * AI image generation
@@ -95,3 +214,6 @@ The platform supports exporting generated blogs into downloadable formats:
 * Advanced SEO scoring
 * Cloud deployment
 * Team collaboration features
+
+
+
